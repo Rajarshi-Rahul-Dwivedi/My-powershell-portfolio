@@ -25,14 +25,14 @@ Each entry in the site includes:
 👉 https://rajarshi-rahul-dwivedi.github.io/My-powershell-portfolio
 
 This website is entirely static, built with:
-- `HTML5`, `Bootstrap 5`, and light JavaScript
+- `HTML5`, `Bootstrap 5`
 - Hosted freely on **GitHub Pages**
 
 ---
 
 ### 🗂️ Project Structure
 
-```text
+
 My-powershell-portfolio/
 │
 ├── index.html                # Main portfolio site
@@ -40,8 +40,3 @@ My-powershell-portfolio/
 │   ├── Script1.ps1
 │   ├── Utility1.ps1
 │   └── ...
-├── css/
-│   └── style.css             # Optional custom styles
-├── js/
-│   └── script.js             # Optional custom JS
-└── README.md                 # This file
