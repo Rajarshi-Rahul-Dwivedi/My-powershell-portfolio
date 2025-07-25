@@ -22,7 +22,7 @@ Each entry in the site includes:
 ### 🔗 Live Portfolio
 
 🖥️ **Visit Now**:  
-👉 [https://rajarshi-rahul-dwivedi.github.io/My-powershell-portfolio/](https://rajarshi-rahul-dwivedi.github.io/My-powershell-portfolio/)
+👉 https://rajarshi-rahul-dwivedi.github.io/My-powershell-portfolio
 
 This website is entirely static, built with:
 - `HTML5`, `Bootstrap 5`, and light JavaScript
