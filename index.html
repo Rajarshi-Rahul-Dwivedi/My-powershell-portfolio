@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajarshi Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .tab-content {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .script-card {
+      border-left: 4px solid #0d6efd;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background-color: #f8f9fa;
+      border-radius: 0.5rem;
+    }
+    .script-card h3 {
+      font-size: 1.4rem;
+      color: #0d6efd;
+    }
+    .script-card p {
+      margin-bottom: 0.4rem;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-4 display-5 fw-bold">Rajarshi's Portfolio</h1>
+    <p class="lead text-center">
+      Welcome to my PowerShell and automation portfolio. I'm a software engineer passionate about building robust, efficient tools that streamline business operations, automate manual processes, and simplify complex tasks. This collection showcases scripts and utilities I’ve developed across various projects—ranging from Windows server, API, Webdriver and Azure environments. Each entry highlights the purpose, technologies used, and core scripting concepts, giving you insight into both the technical implementation and the value it delivers.
+    </p>
+    <p class="text-center mt-4">
+      <strong>Contact:</strong> <a href="mailto:rajarshi7rahul@gmail.com">rajarshi7rahul@gmail.com</a><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rajarshi-dwivedi-abab7a281" target="_blank">linkedin.com/in/rajarshi-dwivedi-abab7a281</a><br>
+      <strong>Resume:</strong> <a href="scripts/Rajarshi_CV.pdf" download class="link-primary">Download Resume</a>
+    </p>
+
+     <ul class="nav nav-tabs mt-5" id="portfolioTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="scripts-tab" data-bs-toggle="tab" data-bs-target="#scripts" type="button" role="tab">Scripts</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="apps-tab" data-bs-toggle="tab" data-bs-target="#applications" type="button" role="tab">Utilities</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#others" type="button" role="tab">Others</button>
+      </li>
+    </ul>
+
+    <div class="tab-content p-4 bg-white border border-top-0" id="portfolioTabsContent">
+      <!-- Scripts Tab -->
+      <div class="tab-pane fade" id="scripts" role="tabpanel">
+
+
+        <div class="script-card">
+          <h3>Chromedriver Auto-Updater</h3>
+          <p><strong>Purpose:</strong> A simple utility to automatically fetch and update the latest compatible version of ChromeDriver for Selenium-based web automation environments.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Web Requests, Version Detection</p>
+          <p><strong>Key Concepts:</strong> Browser compatibility, automated downloading, dynamic versioning</p>
+          <a href="scripts/run_this_to_get_latest_chromedriver.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ run_this_to_get_latest_chromedriver.ps1</a>
+        </div>
+        
+
+        <div class="script-card">
+          <h3>Media Metadata Editor</h3>
+          <p><strong>Purpose:</strong> Automatically reads and edits metadata of video files within a selected folder to help streamline and organize a local media library efficiently.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, TagLibSharp.dll, Windows Forms, CSV Logging</p>
+          <p><strong>Key Concepts:</strong> Recursive file handling, folder selection UI, tag editing using DLL module,output CSV</p>
+          <a href="scripts/edit_media_discription.ps1" download class="btn btn-outline-success  btn-sm mt-2">⬇ edit_media_discription.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>SEC Filing Fetcher API – FastAPI Microservice</h3>
+          <p><strong>Purpose:</strong> Backend utility built with FastAPI to retrieve quarterly SEC filings (e.g., 10-K, 8-K) from EDGAR. Accepts date range, ticker list, and form type to return structured URLs for each filing, tailored for integration in finance or compliance dashboards.</p>
+          <p><strong>Technologies Used:</strong> Python, FastAPI, requests, pandas, SEC EDGAR API, Node.js integration</p>
+          <p><strong>Key Concepts:</strong> RESTful API design, external data scraping, JSON response formatting, ticker-to-CIK mapping, cross-quarter batch parsing</p>
+          <a href="scripts/get_filings.py" download class="btn btn-outline-success btn-sm mt-2">⬇ get_filings.py</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Azure Function App Service mangers</h3>
+          <p><strong>Purpose:</strong>Runs serverlessly on Azure Function App, authenticates into your Azure environment, and gracefully stops specified services on a defined Virtual Machine and Workgroup. Used for monitoring service status and Restarts.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Azure Az Module, Serverless Architecture,Azure Funtion App</p>
+          <p><strong>Key Concepts:</strong> Cloud automation, service lifecycle management, secure login, resource targeting</p>
+          <a href="scripts/Azure_stop_service.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Azure_stop_service.ps1</a>
+        </div>
+
+
+        <div class="script-card">
+          <h3>Advanced File Cleanup Utility</h3>
+          <p><strong>Purpose:</strong> Permanently deletes files from a selected folder based on user-defined conditions such as name pattern, extension, or size. Designed for advanced users to automate targeted cleanup tasks.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Windows Forms, FileSystem Object</p>
+          <p><strong>Key Concepts:</strong> UI prompts, parameterized deletion logic, recursive folder scanning, real-time action feedback</p>
+          <a href="scripts/File Cleanup.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ File Cleanup.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>PMS Bookings Report Generator</h3>
+          <p><strong>Purpose:</strong> Generates the PMS booking master file by processing the latest booking exports and comparing them against previously stored snapshots. This report is a core part of the Booking Refresh Automation Utility.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Excel COM Automation, Timestamp Validation, File I/O</p>
+          <p><strong>Key Concepts:</strong> Booking state comparison, export file validation, dynamic report creation, timestamp-controlled logic, dashboard file generation</p>
+          <a href="scripts/PMS_bookings_2025.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ PMS_bookings_2025.ps1</a>
+        </div>
+
+
+        <div class="script-card">
+          <h3>Set 7-Zip as Default Extractor</h3>
+          <p><strong>Purpose:</strong> Configures the Windows registry to set 7-Zip as the default application for extracting archive files with a double-click, using the GUI extractor.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Windows Registry, 7-Zip</p>
+          <p><strong>Key Concepts:</strong> Registry editing, file association, string formatting, automation of GUI behavior</p>
+          <a href="scripts/7-zip_default.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ 7-zip_default.ps1</a>
+        </div>
+
+
+        <div class="script-card">
+          <h3>YAML Config Scraper</h3>
+          <p><strong>Purpose:</strong> Recursively scans a selected folder for YAML configuration files and extracts key data into structured `.txt` outputs. Automatically handles versioning of previous runs by timestamping existing files.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, powershell-yaml module, Windows Forms</p>
+          <p><strong>Key Concepts:</strong> YAML parsing, recursive file handling, UI-based folder selection, automated file versioning</p>
+          <a href="scripts/Scrape_yaml.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Scrape_yaml.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>SQL Table Definition Extractor</h3>
+          <p><strong>Purpose:</strong> Parses SQL scripts containing table creation statements to extract schema information like table names, columns, data types, and constraints into structured PowerShell objects.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Regular Expressions, FileSystemObject</p>
+          <p><strong>Key Concepts:</strong> Pattern matching, custom object construction, SQL parsing automation, recursive file processing</p>
+          <a href="scripts/SQL data extraction.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ SQL data extraction.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Mineral Information Scraper</h3>
+          <p><strong>Purpose:</strong> Automates the extraction of mineral data from mindat.org by performing UI-based searches using Selenium, and compiles results like formula and lustre into a downloadable CSV report.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Selenium WebDriver, ChromeDriver, XPath</p>
+          <p><strong>Key Concepts:</strong> Web scraping, browser automation, dynamic element handling, CSV reporting</p>
+          <a href="scripts/Get-mineral_info.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Get-mineral_info.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Text-to-Voice Alert System</h3>
+          <p><strong>Purpose:</strong> Converts any input text into spoken voice alerts using Windows' built-in speech engine. Useful for warning systems, verbal logs, or accessibility enhancements.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, .NET System.Speech, Windows Voices</p>
+          <p><strong>Key Concepts:</strong> Text-to-speech synthesis, input from file, audio feedback, speech customization</p>
+          <a href="scripts/Text-to-Voice.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Text-to-Voice.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Oracle Batch Script Executor (PIW)</h3>
+          <p><strong>Purpose:</strong> Connects to an Oracle database and executes a sequence of SQL scripts organized for PIW (Pre-Installation Workflow) or functional initialization. Outputs are stored and structured automatically.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Oracle SQL*Plus, FileSystemObject</p>
+          <p><strong>Key Concepts:</strong> Parameterized execution, batch processing, Oracle connectivity, SQL automation</p>
+          <a href="scripts/PIW_scripts.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ PIW_scripts.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Automated Video Backup Tool</h3>
+          <p><strong>Purpose:</strong> A browser-assisted automation tool that monitors and manages the download of video lectures from educational web portals without API access. It uses Chrome WebDriver to observe downloads, renames videos intelligently, and backs them up to structured course folders.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Selenium WebDriver,, FileSystem, Transcript Logging</p>
+          <p><strong>Key Concepts:</strong>Browser automation, download monitoring, file integrity checks, folder structuring, automated backup</p>
+          <a href="scripts/Migrate_videos.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Migrate_videos.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Course Info Extractor</h3>
+          <p><strong>Purpose:</strong> Automates the process of generating student reports for a selected course by scraping structured data from an education web portal using Selenium. Outputs are saved in an Excel-friendly format for easy review and recordkeeping.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Selenium WebDriver, Chrome, Windows Forms</p>
+          <p><strong>Key Concepts:</strong> UI-based parameter input, browser automation, dynamic data scraping, student record export</p>
+          <a href="scripts/LMS_Course_info.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_Course_info.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>IFC/OPI Services Auto-Restart Utility</h3>
+          <p><strong>Purpose:</strong> Automates the controlled restart of Opera IFC and OPI services in environments where services need to be bounced in a strict sequence (e.g., after system maintenance or crash recovery). Includes status logging and timed waits for graceful transitions.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, Windows Services, Transcript Logging</p>
+          <p><strong>Key Concepts:</strong> Sequenced service control, dynamic service list handling, production support automation, downtime minimization</p>
+          <a href="scripts/IFC_services_bounce.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ IFC_services_bounce.ps1</a>
+        </div>
+
+        <div class="script-card">
+          <h3>WebLogic Service Control – OAPP Startup & Shutdown Utility</h3>
+          <p><strong>Purpose:</strong> A batch script designed to automate the startup and shutdown sequence for OAPP-related services managed under the Oracle WebLogic environment. Ensures controlled sequencing of service dependencies.</p>
+          
+          <p><strong>Technologies Used:</strong> Batch scripting, Windows Service Control (`sc`), Oracle WebLogic command-line tools</p>
+          
+          <p><strong>Key Concepts:</strong> Sequential service handling, dependency order enforcement, silent operation, integration with WebLogic environment variables</p>
+
+          <a href="#" class="btn btn-outline-danger btn-sm mt-2 disabled" tabindex="-1" aria-disabled="true">⬇ Start_Stop_oapp.bat</a>
+        </div>
+
+        <div class="script-card">
+          <h3>Automated Windows Service Checker</h3>
+          <p><strong>Purpose:</strong> Monitors and logs the status of critical Windows services across remote servers to ensure uptime and detect failures early.</p>
+          <p><strong>Technologies Used:</strong> PowerShell, WMI, Windows Services, CSV Logging</p>
+          <p><strong>Key Concepts:</strong> Loops, remote server access, error handling, conditional logic</p>
+          <a href="#" class="btn btn-outline-danger btn-sm mt-2 disabled" tabindex="-1" aria-disabled="true">⬇ Service_Checker.ps1</a>
+        </div>
+
+   </div>
+
+
+
+
+
+
+      <!-- Utilities Tab -->
+      <div class="tab-pane fade  show active" id="applications" role="tabpanel">
+        
+      <div class="script-card">
+        <h3>Opera Cloud API Utility – Backend for Windows Forms Hotel Dashboard</h3>
+        <p><strong>Purpose:</strong> A PowerShell-based backend service for a Windows Forms application used for hotel environments running Oracle Opera Cloud. This utility interfaces directly with Opera Cloud APIs to fetch and update live hotel data—room status, reservations, and event logs.</p>
+
+        <p><strong>Technologies Used:</strong> PowerShell, REST API (GET/POST/PUT), Oracle Hospitality API Suite, Windows Forms (Frontend)</p>
+
+        <p><strong>Key Concepts:</strong> API token-based authentication, JSON payload construction, real-time request handling, backend logic modularization, dynamic request routing based on UI inputs</p>
+
+        <p><strong>Special Features:</strong></p>
+        <ul>
+          <li>Acts as the backend layer for a GUI built using Windows Forms, separating UI and logic layers.</li>
+          <li>Receives inputs via the frontend and triggers API requests with dynamically assembled headers and body.</li>
+          <li>Fully decoupled structure enables the frontend to focus on user interaction while the script handles all network communication.</li>
+          <li>Modular, scalable, and reusable across multiple hotel properties.</li>
+        </ul>
+
+        <a href="scripts/API_OPERA_CLOUD_CLEAN.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ API_OPERA_CLOUD.ps1</a>
+      </div>
+
+
+
+      <div class="script-card">
+      <h3>Opera Frontdesk Compliance Validator</h3>
+      <p><strong>Purpose:</strong> This utility is designed for deployment across hotels using the Opera Front Desk system backed by Oracle DB. It performs in-depth validation checks to ensure the environment is production-ready, especially before executing mission-critical operations like upgrades or data migration.</p>
+
+      <p><strong>Technologies Used:</strong> PowerShell, Oracle SQL, HTML Email Composition, SharePoint Integration, Windows Forms</p>
+
+      <p><strong>Key Concepts:</strong> Custom validation workflows, dynamic HTML report generation, system service checks, registry evaluation, user-role compliance, scheduled backup evaluation, SharePoint upload, and automated status mailing.</p>
+
+      <p><strong>Special Features:</strong></p>
+      <ul>
+      <li>Collects a wide array of system and application-level details from the target Opera environment.</li>
+      <li>Evaluates database connectivity, TNS listener status, and scheduled backup configurations.</li>
+      <li>Executes multiple SQL queries and wraps their results into structured CSV reports.</li>
+      <li>Generates a dynamic HTML report to visually summarize validation status with color codes.</li>
+      <li>Emails the report directly to clients/stakeholders using SMTP, eliminating manual communication.</li>
+      <li>Includes helper logic for detecting Oracle client presence, Java version, and patch compliance.</li>
+      <li>All reports are automatically pushed to a SharePoint directory for permanent archiving.</li>
+      </ul>
+       <a href="scripts/Opera_info.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Opera_info.ps1</a>
+       <a href="scripts/Opera_info.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">9-bat_scripts.zip</a><br>
+       <a href="scripts/Opera_info.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">60-sqlquery_scripts.zip</a><br>
+      </div>
+
+      <div class="script-card">
+        <h3>Booking Refresh Automation Utility – End-to-End Pipeline</h3>
+        <p><strong>Purpose:</strong> This robust utility orchestrates a complex refresh pipeline that automatically downloads, validates, merges, and uploads critical booking data every 3 hours. It connects to multiple platforms including Microsoft Bookings, Smartsheet, and SharePoint, creating a unified Excel report that's distributed via email and uploaded to internal dashboards.</p>
+
+        <p><strong>Technologies Used:</strong> PowerShell, Selenium WebDriver, Excel Automation, Smartsheet Web Automation, SharePoint UI Automation, HTML Email Templates</p>
+
+        <p><strong>Key Concepts:</strong> Modular orchestration, timestamp-based validation, web UI scraping, retry-loop resiliency, Excel merging, automated scheduling, structured logging, error alerting, email automation with attachments.</p>
+
+        <p><strong>Workflow Summary:</strong><br>
+        ⬩ Downloads data from Smartsheet, SharePoint, and Bookings.com using Selenium<br>
+        ⬩ Validates export timestamps to ensure data freshness<br>
+        ⬩ Manage Daylight Savings Time based on the Property location<br>
+        ⬩ Consolidates bookings into master reports using logic-driven merges<br>
+        ⬩ Uploads final validated reports to internal portals (elit & dashboard)<br>
+        ⬩ Sends formatted summary emails with status logs and attachments<br>
+        ⬩ Self-heals by retrying failed modules and logging each step<br>
+        </p>
+
+        <p><strong>Script:</strong><br>
+        <a href="scripts/master_controller.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Master Contoller.ps1</a>
+        <a href="scripts/PMS_bookings_2025.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Main_bookings.ps1</a><br>
+        <a href="scripts/DST_changes.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ DST_changes.ps1</a>        
+        <a href="scripts/Download_smartsheet.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ Download_smartsheet.ps1</a><br>
+        <a href="scripts/Upload_commitment_logs.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">⬇ upload_commitment_logs.ps1</a>
+        <a href="scripts/upload_To_sharepoint.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">⬇ upload_To_sharepoint.ps1</a><br>
+        <a href="scripts/run_this_to_get_latest_chromedriver.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ run_this_to_get_latest_chromedriver.ps1</a>
+        <a href="scripts/upload_To_sharepoint.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">Kkill DB session.ps1</a><br>
+        <a href="scripts/upload_To_sharepoint.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">fetch_Sharepoint_Reports.ps1</a>
+        <a href="scripts/upload_To_sharepoint.ps1" download class="btn btn-outline-danger btn-sm mt-2 disabled">run_DB_bukinsert.ps1</a><br>
+        </p><br><br>
+      </div>
+
+      <div class="script-card">
+        <h3>Restaurant Refund Automation Utility (RSU)</h3>
+        <p><strong>Purpose:</strong> This utility is used in production environments to automate the refund process for restaurant bookings in case of permanent or temporary closuresor. It integrates multiple components—from Python scripts to PowerShell automation—ensuring secure, accurate, and timely processing of refund actions. This tool significantly reduces manual intervention in a high-volume business operation.</p>
+        
+        <p><strong>Technologies Used:</strong> PowerShell, Python (pandas, openpyxl, azure-identity, azure-keyvault-secrets), Smartsheet API, ImportExcel module, Azure Key Vault</p>
+        
+        <p><strong>Key Concepts:</strong> 
+          - Secure token-based authentication with Azure Key Vault<br>
+          - Dynamic Excel file validation and parsing<br>
+          - Environment-specific logic for refund processing<br>
+          - Resilient error handling and process re-attempt logic<br>
+          - Seamless orchestration of dependent Python scripts<br>
+          - Compatibility with organizational booking and refund workflows</p>
+
+        <p><strong>Special Features:</strong> 
+          - All critical logic (file selection, environment selection, Python call sequence) is driven by unattended Powershell Script.<br>
+          - Scripts are validated using checksum and version tagging before execution.<br>
+          - The process flow includes smart re-run policies if intermediate steps fail (e.g., refund API reattempt).<br>
+         
+
+        <a href="scripts/RSU_Main PROD.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ RSU_Main PROD.ps1</a>
+        <br>
+        <a href="scripts/refund_submit.py" download class="btn btn-outline-danger btn-sm mt-2 disabled">⬇ get_product.py</a><br>
+        <a href="scripts/restaurant_validator.py" download class="btn btn-outline-danger btn-sm mt-2 disabled">⬇ postPayment.py</a><br>
+        <a href="scripts/restaurant_validator.py" download class="btn btn-outline-danger btn-sm mt-2 disabled">⬇ getCommunication_Reservation.py</a><br>
+      </div>
+
+      <div class="script-card">
+        <h3>LMS Migration Utility – End-to-End Migration of Educational Assets</h3>
+          <p><strong>Purpose:</strong> This utility automates the complex process of migrating educational data and digital assets from an older LMS platform (without API access) to a newer, API-driven LMS. It addresses a common institutional challenge—porting structured content like student records, course quizzes, video lectures, and learning material—without manual intervention or backend database access. The utility enables seamless transition of operational data to support uninterrupted learning experiences for students.</p>
+
+          <p><strong>Technologies Used:</strong> PowerShell, Selenium WebDriver, Windows Forms (UI-based input handling), RESTful API (for destination LMS), HTML parsing, JSON manipulation, CSV transformation</p>
+
+          <p><strong>Key Concepts:</strong> This suite showcases the integration of web scraping and API automation in educational technology. Using headless Selenium-based browsing, it navigates LMS web portals to extract test results, student-specific progress metrics, and downloadable courseware. Files are sanitized and structured using PowerShell logic before being injected into the target LMS’s Asset Library via API POST requests. It incorporates error handling, retry mechanisms, timestamp-based validation, and login session management for reliable automation across institutional setups.</p>
+
+          <p><strong>Unique Features:</strong> 
+            <ul>
+              <li>Handles legacy LMS systems with no backend access</li>
+              <li>Enables batch export of student test details and quiz configurations</li>
+              <li>Automates downloading of lecture videos and teaching material using UI-based web navigation</li>
+              <li>Processes and restructures quiz and test content for compatibility with the new LMS API</li>
+              <li>Implements token-based REST communication with asset upload endpoints</li>
+            </ul>
+          </p>
+
+          <p><strong>Included Scripts:</strong></p>
+        
+          <a href="scripts/LMS_Migrate_videos.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_Migrate_videos.ps1</a>
+          <a href="scripts/LMS_export_quiz.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_export_quiz.ps1</a><br>
+          <a href="scripts/LMS_Student_test_details.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_Student_test_details.ps1</a>
+          <a href="scripts/LMS_import_quiz_asset_Library_API.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_import_quiz_asset_Library_API.ps1</a><br>
+          <a href="scripts/LMS_Course_info.ps1" download class="btn btn-outline-success btn-sm mt-2">⬇ LMS_Course_info.ps1</a>
+        </ul>
+      </div>
+
+
+
+
+  </div>
+      <!-- Others Tab -->
+      <div class="tab-pane fade" id="others" role="tabpanel">
+        <p class="text-muted">No other items listed yet.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
