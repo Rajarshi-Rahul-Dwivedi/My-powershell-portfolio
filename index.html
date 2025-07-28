@@ -36,8 +36,7 @@
     <p class="text-center mt-4">
       <strong>Contact:</strong> <a href="mailto:rajarshi7rahul@gmail.com">rajarshi7rahul@gmail.com</a><br>
       <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rajarshi-dwivedi-abab7a281" target="_blank">linkedin.com/in/rajarshi-dwivedi-abab7a281</a><br>
-      <strong>Resume:</strong> <a href="scripts/Rajarshi_CV.pdf" download class="link-primary">Download Resume</a><br>
-      <strong>Github:</strong> <a href="https://github.com/Rajarshi-Rahul-Dwivedi/My-powershell-portfolio" download class="link-primary">My-powershell-portfolio</a>
+      <strong>Resume:</strong> <a href="scripts/Rajarshi_CV.pdf" download class="link-primary">Download Resume</a>
     </p>
 
      <ul class="nav nav-tabs mt-5" id="portfolioTabs" role="tablist">
@@ -345,8 +344,23 @@
 
 
   </div>
+
       <!-- Others Tab -->
       <div class="tab-pane fade" id="others" role="tabpanel">
+
+        <div class="script-card">
+          <h3>Cancellation Tracker - POWER BI Dashboard</h3>
+          <p><strong>Purpose:</strong> This dashboard provides detailed analytics on hotel bookings received from major online travel agencies such as Booking.com and Expedia. It focuses on highlighting key metrics including total bookings, net room revenue, cancellation counts, and revenue losses due to cancellations. The main objective is to enable clients to monitor cancellation trends over a defined time range and take informed actions to reduce revenue loss.</p>
+          <p><strong>Technology & Integration:</strong> Built on a pre-defined semantic model, the dashboard is integrated with real-time hotel data systems and supports time-based filters. It uses data visualization elements like line graphs and pie charts to represent booking fees, booking status distribution, and cancellation impact across sources.</p>
+          <p><strong>Key Visuals:</strong> Real-time metrics display, custom date filters, source badges, and dynamically refreshed cancellation analytics, all presented with a clean and intuitive user interface.</p>
+          <p><strong>Data Model:</strong> The dashboard leverages a live connection to a centralized semantic model rather than importing static data. This ensures that all metrics—such as cancellations, actual revenue, and net bookings—are up-to-date. Custom DAX measures are used extensively to compute critical KPIs like "Net Amount Cancelled", "Cancellation Count", and "Actual Booking Fee" dynamically based on user-selected filters and timeframes.</p>
+           <a href="screencaps/Cancellation tracker dashboard 1.png" target="_blank"> 
+          <img src="screencaps/Cancellation tracker dashboard 1.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="Cancellation Tracker Dashboard"></a>
+          <a href="screencaps/Cancellation tracker dashboard 2.png" target="_blank">
+          <img src="screencaps/Cancellation tracker dashboard 2.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="Cancellation Tracker Dashboard"></a>
+        </div>
+
+       
         <div class="script-card">
           <h3>Course Lead Collector – Make.com Workflow</h3>
           <p><strong>Purpose:</strong> This automation pipeline handles course inquiries submitted via Google Forms and streamlines lead management. It ensures prompt logging, communication, and team notification for every new student interest.</p>
@@ -360,7 +374,7 @@
             5. Post a message in a Microsoft Teams channel to notify the support team</p>
           <p class="text-muted fst-italic">Note: This Make.com module is cloud-based and does not contain a script.</p>
         </div>
-      </div>
+      
 
       <div class="script-card">
         <h3>Student Progress Tracker – Make.com Workflow</h3>
@@ -375,8 +389,25 @@
         <p class="text-muted fst-italic">Note: This Make.com module is cloud-based and does not contain a script.</p>
       </div>
 
+      <div class="script-card">
+        <h3>KPP Overview - POWER BI Dashboards</h3>
+        <p><strong>Purpose:</strong> These group of dashboards provide a centralized view of the Keep Patching Pace (KPP) activities across three major upgrade streams. Each dashboard represents a distinct activity group where application and database versions are upgraded across multiple hotel properties. They track schedules, patch rollout plans, validation checkpoints, and version control across systems. The dashboards are powered by direct Oracle DB connections using ODBC drivers, allowing near real-time refresh and reporting. These are used to communicate progress and coordinate timelines with internal stakeholders and client teams, ensuring transparency and traceability in high-impact deployment cycles.</p>
+        <p><strong>Technology & Integration:</strong> The dashboard is connected to an Oracle database using ODBC drivers. Data is automatically refreshed at regular intervals to reflect the most recent updates regarding booking operations, patch cycles, and task completion.</p>
+        <p><strong>Utility Reference:</strong> Works in conjunction with a Dynamic Utility to provide up-to-date insights to clients about ongoing patch deployments and system upgrades.</p>
+        <p><strong>Key Visuals:</strong></p>
+          <ul>
+            <li><strong>Burndown Chart:</strong> Built using complex DAX expressions to compute ideal, actual and planned pace over a time period. Custom columns calculate cumulative task closures vs. targets.</li>
+            <li><strong>Cumulative Patching Pace Chart:</strong> Dynamically tracks progress over a quarter. DAX logic maps task transitions to financial or time impact.</li>
+            <li><strong>Version Info & Control View:</strong> Shows current and target application/database versions for each hotel</li>
+          </ul>
 
-</div>
+        <a href="screencaps/KPP dashboard 1.png" target="_blank"> <img src="screencaps/KPP dashboard 1.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="KPP Overview Dashboard"></a>
+        <a href="screencaps/KPP dashboard 2.png" target="_blank"> <img src="screencaps/KPP dashboard 2.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="KPP Overview Dashboard"></a>
+        <a href="screencaps/KPP dashboard 3.png" target="_blank"> <img src="screencaps/KPP dashboard 3.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="KPP Overview Dashboard"></a>
+        <a href="screencaps/KPP dashboard 4.png" target="_blank"> <img src="screencaps/KPP dashboard 4.png" class="img-fluid rounded border mt-2" style="max-width: 250px;" alt="KPP Overview Dashboard"></a>
+      </div>
+
+
 
 
     </div>
